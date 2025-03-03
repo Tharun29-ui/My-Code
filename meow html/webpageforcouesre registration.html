@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+</head>
+<body>
+
+    <h1>Course Registration</h1>
+
+    <form action="/submit_registration" method="POST">
+        Full Name: <input type="text" name="S.THARUN"><br><br>
+        Email: <input type="email" name="tt20735@gmail.com"><br><br>
+        Phone: <input type="tel" name="9080337467"><br><br>
+        Course: 
+        <select name="course">
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="data-science">Data Science</option>
+        </select><br><br>
+        Time Slot: 
+        <select name="time_slot">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
