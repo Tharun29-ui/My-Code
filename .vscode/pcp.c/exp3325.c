@@ -26,7 +26,7 @@ void pop() {
 }
 
 void peek() {
-    if (top == -1) {
+    if (top == -1) {     
         printf("Stack is empty!\n");
         return;
     }
@@ -46,6 +46,15 @@ void display() {
 }
 
 int main() {
+    int choice, value;
+    printf("------------------------");
+    printf("\nStack Operations Menu:\n");
+        printf("1. Push\n");
+        printf("2. Pop\n");
+        printf("3. Peek\n");
+        printf("4. Display\n");
+        printf("5. Exit\n");
+        printf("------------------------\n");
     printf("Enter the size of the stack: ");
     scanf("%d", &n);
 
@@ -54,12 +63,32 @@ int main() {
         return 1;
     }
 
-    push(5);
-    push(10);
-    peek();
-    display();
-    pop();
-    display();
+    while (1) {
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter the value to push: ");
+                scanf("%d", &value);
+                push(value);
+                break;
+            case 2:
+                pop();
+                break;
+            case 3:
+                peek();
+                break;
+            case 4:
+                display();
+                break;
+            case 5:
+                printf("Exiting the program.\n");
+                return 0;
+            default:
+                printf("Invalid choice! Please try again.\n");
+        }
+    }
 
     return 0;
 }

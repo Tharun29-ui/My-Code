@@ -28,9 +28,9 @@ public class cricket {
             }
         }
         
-        System.out.println("Sorted array:");
+        System.out.println("Sorted score:");
         for (int i = 0; i < n; i++) {
-            System.out.print(array[i] + " ");
+            System.out.print(array[i] + " ");  
         }
         for(int i=0;i<n;i++)
         {
